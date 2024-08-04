@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Player</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <div class="video-page">
+<div class="video-container">
+    <div class="video-player">
+<h1>Cook Book Xpress</h1>
+
+      <video controls id="videoPlayer">
+        <source src="your-video-source.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+     <div class="video-description" id="videoDescription11">
+        <h2>LEMON RICE | Quick Lunch | Spicy HomeMade | Indian Recipes</h2>
+        <p id="videoDescription">Making of delicious Hyderabadi Biriyani step by step.</p>
+      </div>
+
+
+
+   <div class="ingredient-order-form" id="ingredientTable11" >
+      <h2>Order Ingredients</h2>
+      <form method="post" action="checkbox-db.php">
+      <table>
+        <thead>
+          <tr>
+ <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Basmati Rice</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="riceQuantity1" id="riceQuantity1" min="0">
+            </td>
+          </tr>
+          <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient2" id="selectIngredient2">
+        </td>
+            <td>Vegetable</td>
+            <td>500 g</td>
+            <td>
+              <input type="number" name="vegetablesQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+          <tr>
+
+           <td>
+          <input type="checkbox" name="selectIngredient2" id="selectIngredient2">
+        </td>
+            <td>mustard</td>
+            <td>500 g</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+         <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient2" id="selectIngredient2">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+         <tr>
+         <td>
+          <input type="checkbox" name="selectIngredient2" id="selectIngredient2">
+        </td>
+            <td>Tumeric Powder</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+       <tr>
+          <td>
+          <input type="checkbox" name="selectIngredient2" id="selectIngredient2">
+        </td>
+            <td>ground net</td>
+            <td>1 pack</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="addToCart" type="button" value="Submit">Add To Cart</button>
+    </form>
+      <button id="orderButton1" type="button" >Buy Now</button>
+    </div>
+
+
+
+
+ <div class="video-description"  id="videoDescription1" style="display: none;">
+        <h2>Chicken Biriyani | Quick Lunch | Spicy HomeMade | Indian Recipes</h2>
+        <p id="videoDescription">Making of delicious Hyderabadi Biriyani step by step.</p>
+      </div>
+  <!-- Ingredient Order Form -->
+    <div class="ingredient-order-form" id="ingredientTable1" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+          <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Basmati Rice</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="riceQuantity1" id="riceQuantity1" min="0">
+            </td>
+          </tr>
+          <tr>
+         <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Vegetable</td>
+            <td>500 g</td>
+            <td>
+              <input type="number" name="vegetablesQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+          <tr>
+          <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Chicken</td>
+            <td>500 g</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+         <tr>
+        <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+         <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Tumeric Powder</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+       <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Chicken Masala</td>
+            <td>1 pack</td>
+            <td>
+              <input type="number" name="vegetableQuantity1" id="vegetablesQuantity1" min="0">
+            </td>
+          </tr>
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton1" type="button">Place Order</button>
+    </div>
+
+  <div class="video-description" id="videoDescription2" style="display: none;">
+        <h2>Delicious Panner Tikka | Restuarent style panner tikka</h2>
+        <p>Tasty Restaurent style panner tikka step by step</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable2" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+             <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+         <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Panner cut</td>
+            <td>100 g</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+               <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Hung curd</td>
+            <td>200 g</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+                <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Onions</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Tomatos</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Capsicum</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+<!--Repeat above-->
+
+<div class="video-description" id="videoDescription3" style="display: none;">
+        <h2>Crispy Aloo Samosa Roll | Tasty Evening snacks</h2>
+        <p>Making of Samosa roll step by step</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable3" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+           <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Refined Flour</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+           <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Potato Mashed</td>
+            <td>200 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Garam Masala</td>
+            <td>1 packet</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+    <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>peas</td>
+            <td>200 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+  <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>chat masala</td>
+            <td>1 pack</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+<div class="video-description" id="videoDescription4" style="display: none;">
+        <h2>Spicy Mutton Biriyani | Tasty Dhabha style Muttton Biriyani</h2>
+        <p>Making of Dhabha style Spicy Mutton Biriyani step by step</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable4" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+             <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Mutton</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+           <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Basmati rice</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Biriyani Masala</td>
+            <td>1 packet</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+                  <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>chilli powder</td>
+            <td>250 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+           <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Ghee</td>
+            <td>100 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+<div class="video-description" id="videoDescription5" style="display: none;">
+        <h2>Chicken Momos Recipe | Tasty Making of Momos | Evening snacks</h2>
+        <p>Delicious Resturaent style Chicken Momos making step by step</p>
+      </div>
+
+
+<div class="ingredient-order-form" id="ingredientTable5" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+             <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Maida</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+               <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Boneless Chicken</td>
+            <td>250 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+               <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+          <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Green chilli</td>
+            <td>250 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>onions</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+<div class="video-description" id="videoDescription6" style="display: none;">
+        <h2>Crispy French Fries | Tasty Evening snackes | Home made French fries</h2>
+        <p>French fries restuarent style making step by step home made</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable6" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+     <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Potatos</td>
+            <td>700 gm</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>corn starch</td>
+            <td>250 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Butter</td>
+            <td>250 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>salt</td>
+            <td>1 packet</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+<div class="video-description" id="videoDescription7" style="display: none;">
+        <h2>Delicious Oilless Noodels | Tasty chineese Noodles | Evening snacks</h2>
+        <p>Delicious Resturaent style Chicken Momos making step by step</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable7" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+                <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Noodles</td>
+            <td>1 packet</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Onions</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Tomato paste</td>
+            <td>250 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>chilli powder</td>
+            <td>250 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+<div class="video-description" id="videoDescription8" style="display: none;">
+        <h2>Delicious Vegetable Biriyani | Tasty Veggies Hme made foods | Easy making Lunch</h2>
+        <p>Tasty Home made Vegetable Biriyani making step by step</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable8" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Basmati rice</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+                <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Onions</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Tomato </td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>vegetables</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+             <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+<div class="video-description" id="videoDescription9" style="display: none;">
+        <h2> Cheese Chilli Toast Sandwich | Cheese Sandwich | Kids Snacks | Sandwich Recipe</h2>
+        <p>Tasty Cheesy Sandwich home made making step by step</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable9" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+              <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Butter</td>
+            <td>100 gm</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Bread</td>
+            <td>1 packet</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Cheese </td>
+            <td>200 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+               <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>vegetables</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Red chilli</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+<div class="video-description" id="videoDescription10" style="display: none;">
+        <h2> Egg Fried Rice Recipe | Restaurant Style Egg Fried Rice</h2>
+        <p>Delicious Egg Fried Rice Restaurant style making home made</p>
+      </div>
+
+<div class="ingredient-order-form" id="ingredientTable10" style="display: none;">
+      <h2>Order Ingredients</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ChechItem</th>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+            <th>Select Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Basmati rice</td>
+            <td>1 kg</td>
+            <td>
+              <input type="number" name="riceQuantity2" id="riceQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Eggs</td>
+            <td>1</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+          <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>Garlic </td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+            <tr>
+              <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>vegetables</td>
+            <td>500 gm</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+        <tr>
+            <td>
+          <input type="checkbox" name="selectIngredient1" id="selectIngredient1">
+        </td>
+            <td>oil</td>
+            <td>500 ml</td>
+            <td>
+              <input type="number" name="vegetablesQuantity2" id="vegetablesQuantity2" min="0">
+            </td>
+          </tr>
+
+          <!-- Add more ingredients here -->
+        </tbody>
+      </table>
+      <button id="orderButton2" type="button">Place Order</button>
+    </div>
+
+
+</div>
+
+
+
+
+    <div class="thumbnail-sidebar">
+      <div class="side-video-list">
+
+       <a href="chickenbiriyani.mp4" class="small-thumbnail" data-description="videoDescription1" data-ingredient-table="ingredientTable1">
+          <img src="http://upload.wikimedia.org/wikipedia/commons/7/7c/Hyderabadi_Chicken_Biryani.jpg">
+          <div class="vid-info">
+            <h3>Spicy Biriyani</h3>
+            <p>Meghana Iyer</p>
+            <p>124k Views • 6 months ago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+<a href="panner tikka.mp4" class="small-thumbnail" data-description="videoDescription2" data-ingredient-table="ingredientTable2">
+          <img src="https://www.muslimink.com/wp-content/uploads/2014/07/paneer-tikka.jpg">
+          <div class="vid-info">
+            <h3>Make PannerTikka</h3>
+            <p>Michael Bras</p>
+            <p>6.5M Views • 4 years ago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+<a href="Aloo Samosa.mp4" class="small-thumbnail" data-description="videoDescription3" data-ingredient-table="ingredientTable3">
+          <img src="https://i.pinimg.com/originals/c3/a9/72/c3a9726815e669e063c5b190bc9b9b6b.jpg">
+          <div class="vid-info">
+            <h3>SamosaRoll at Home</h3>
+            <p>Rasmus Kofed</p>
+            <p>7.7M Views • 8 months ago </p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+<a href="MuttonBiriyani.mp4" class="small-thumbnail" data-description="videoDescription4" data-ingredient-table="ingredientTable4">
+          <img src="http://www.spiceindiaonline.com/wp-content/uploads/DSC02880.JPG">
+          <div class="vid-info">
+            <h3>Best Mutton Biryani </h3>
+            <p>Dindigal Food court</p>
+            <p>6.5MViews • 3 months ago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+
+<a href="chickenMomos.mp4" class="small-thumbnail" data-description="videoDescription5" data-ingredient-table="ingredientTable5">
+          <img src="https://im.whatshot.in/img/2019/May/shutterstock-1133804639-cropped-1557741221.jpg">
+          <div class="vid-info">
+            <h3>ChickenMomos</h3>
+            <p>Reciepe House</p>
+            <p>10k Views • 2 months ago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+<a href="Frenchfries.mp4" class="small-thumbnail" data-description="videoDescription6" data-ingredient-table="ingredientTable6">
+          <img src="http://img.taste.com.au/MudZOM3z/taste/2016/11/french-fries-87711-1.jpeg">
+          <div class="vid-info">
+            <h3>Cripsy FrenchFries</h3>
+            <p>RecipesWorld</p>
+            <p>647k Views • 2 weeksago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+
+
+
+
+<a href="Noodles.mp4" class="small-thumbnail" data-description="videoDescription7" data-ingredient-table="ingredientTable7">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/04/5d/84/singapore-style-noodles.jpg">
+          <div class="vid-info">
+            <h3>Noodles oilless</h3>
+            <p>Veggie Recipes</p>
+            <p>8.7k Views • 2 years ago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+<a href="vegetableBiriyani.mp4" class="small-thumbnail" data-description="videoDescription8" data-ingredient-table="ingredientTable8">
+          <img src="https://2.bp.blogspot.com/-hvd8zwNbBbE/Ug5ep8aTG0I/AAAAAAAAD3Q/-z0FpUu-7jE/s1600/DSC_0395.JPG">
+          <div class="vid-info">
+            <h3>Vegetable Biriyani</h3>
+            <p>RecipesWorld</p>
+            <p>6M Views • 3 weeksago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+        <!-- Add more thumbnail links here -->
+<a href="sandwich.mp4" class="small-thumbnail" data-description="videoDescription9" data-ingredient-table="ingredientTable9">
+          <img src="https://2.bp.blogspot.com/-VDlK83TTN04/VgEVZa6XZfI/AAAAAAAAH6k/V7jLCOWXaHU/s1600/spicy%20vegetable%20sandwich.JPG">
+          <div class="vid-info">
+            <h3>Tasty Sandwich</h3>
+            <p>Spice Blast</p>
+            <p>6.4M Views • 5 monthsago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+
+
+
+
+<a href="EggfriedRice.mp4" class="small-thumbnail" data-description="videoDescription10" data-ingredient-table="ingredientTable10">
+          <img src="http://slurrp.club/wp-content/uploads/2020/04/DSC_0155-2.jpg">
+          <div class="vid-info">
+            <h3>Spicy EggFriedRice</h3>
+            <p>Dindigal FoodCourt</p>
+            <p>15M Views • 1 year ago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+<a href="chocolatepillowcake.mp4" class="small-thumbnail">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.UVOoXlHCDVxzAgS-GBf27QHaFj&pid=Api&P=0&h=180">
+          <div class="vid-info">
+            <h3>Yummy Cake</h3>
+            <p>SK Bakery</p>
+            <p>5.6M Views • 4 months ago</p>
+          </div>
+        </a>
+        <!-- Add more thumbnail links here -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ <script>
+      // Function to play the video based on the query parameter
+      function playVideoFromQueryParameter() {
+        const queryParams = new URLSearchParams(window.location.search);
+        const videoSrc = queryParams.get('video');
+
+        if (videoSrc) {
+          const videoPlayer = document.getElementById('videoPlayer');
+          videoPlayer.src = videoSrc;
+          videoPlayer.play();
+        }
+      }
+
+      // Function to handle thumbnail click events
+      function handleThumbnailClick(event) {
+        event.preventDefault();
+
+        const videoSrc = this.getAttribute('href');
+        const descriptionID = this.getAttribute('data-description');
+        const ingredientTableID = this.getAttribute('data-ingredient-table');
+
+        const videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer.src = videoSrc;
+        videoPlayer.play();
+
+        // Hide all video descriptions
+        const allVideoDescriptions = document.querySelectorAll('.video-description');
+        allVideoDescriptions.forEach(description => {
+          description.style.display = 'none';
+        });
+
+        // Show the selected video description
+        const videoDescription = document.getElementById(descriptionID);
+        videoDescription.style.display = 'block';
+
+        // Hide all ingredient tables
+        const allIngredientTables = document.querySelectorAll('.ingredient-order-form');
+        allIngredientTables.forEach(table => {
+          table.style.display = 'none';
+        });
+
+        // Show the selected ingredient table
+        const ingredientTable = document.getElementById(ingredientTableID);
+        ingredientTable.style.display = 'block';
+      }
+
+
+
+      // Add event listeners to thumbnail links
+      const thumbnailLinks = document.querySelectorAll('.small-thumbnail');
+      thumbnailLinks.forEach(link => {
+        link.addEventListener('click', handleThumbnailClick);
+      });
+
+      // Add event listener to play video when the page loads
+      window.addEventListener('load', playVideoFromQueryParameter);
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
